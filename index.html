@@ -5,10 +5,62 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>INSOLITUM TEAM</title>
-    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="/css/norm.css">
+    <link rel="stylesheet" href="/css/style.css">
 </head>
-<body>
-    <p>HELLO WE ARE INSOLITUM</p>
-    <script src="main.js"></script>
+<body> 
+    <header class="header" /">
+        <nav class="nav">
+            <ul class="nav_buttons">
+                <li class="nav_button hvr-grow"><a href="" class="nav__buttons__link">Our projects</a></li>
+                <li class="nav_button hvr-grow"><a href="" class="nav__buttons__link">About us</a></li>
+            </ul>
+            <div class="logo">
+                <img src="img/Group 1.svg" alt="" class="logo_picture">
+                <a href="" class="logo_text">Insolitum</a>
+            </div>
+            <button class="contact"><p class="contact_text">Contact us</p></button>
+        </nav>
+        <div class="space">
+            <body onload="printtext()">
+                <font id="text" class="space_text"></font>
+        </div>
+    </header>
+    <main class="main">
+        <div class="main__container">
+            <section class="main__container__who">
+                <h1 class="main__container__who__heading">
+                    Who we are
+                </h1>
+                <p class="main__container__who__text">
+                    Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam eu enim sem. Sed porta erat nulla, sit amet placerat arcu rhoncus vitae. Phasellus pulvinar tristique leo, sed facilisis nibh sodales non. Duis rhoncus consectetur est ac pretium.
+                    Vivamus non ipsum lobortis massa commodo pretium non imperdiet metus. Praesent sollicitudin in lectus non consequat. Proin in consequat lectus. Quisque suscipit ex id mi hendrerit, non dictum dui consequat. Pellentesque luctus urna sagittis venenatis mattis.
+                </p>
+            </section>
+            <section class="projects">
+                <h1 class="projects__heading">Our projects</h1>
+
+                <div class="cards">
+                    <div class="card hvr-grow ">
+                        <img src="/img/Rectangle 4.svg" alt="" class="card__picture">
+                        <a href="metabsuir.by" class="card__link">metabsuir.by</a>
+                        <p class="card__text">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam eu enim sem. Sed porta erat nulla, sit amet placerat arcu rhoncus vitae. Phasellus pulvinar tristique leo, sed facilisis nibh sodales non. Duis rhoncus consectetur est ac pretium.
+                        </p>
+                    </div>
+                    <div class="card  hvr-grow">
+                        <img src="/img/Rectangle 4.svg" alt="" class="card__picture">
+                        <a href="insolitum.team" class="card__link">insolitum.com</a>
+                        <p class="card__text">Vivamus non ipsum lobortis massa commodo pretium non imperdiet metus. Praesent sollicitudin in lectus non consequat. Proin in consequat lectus. Quisque suscipit ex id mi hendrerit, non dictum dui consequat. Pellentesque luctus urna sagittis venenatis mattis.</p>
+                    </div>
+                </div>
+            </section>
+            <section class="teammembers">
+                <h1 class="teammembers__heading"></h1>
+            </section>
+        </div>
+    </main>
+    <script src="/js/main.js"></script>
+    <script src=" https://cdnjs.cloudflare.com/ajax/libs/typed.js/2.0.9/typed.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
 </body>
 </html>
