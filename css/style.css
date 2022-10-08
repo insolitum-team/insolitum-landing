@@ -10,6 +10,7 @@ html {
     -moz-background-size: cover;
     -o-background-size: cover;
     background-size: cover;
+    width: 100%;
 }
 
 .nav {
@@ -23,6 +24,7 @@ html {
     position: fixed;
     width: 100vw;
     top: 0;
+    z-index:1;
 }
 .hvr-grow {
     display: inline-block;
