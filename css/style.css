@@ -167,3 +167,12 @@ padding-right: 70px;
     text-decoration:underline;
 }
 
+   .typed-cursor {
+    font-style: normal;
+font-weight: 700;
+font-size: 36px;
+line-height: 31px;
+color: #fff;
+cursor: default;
+   }
+
