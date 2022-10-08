@@ -1,6 +1,5 @@
-
-var typed = new Typed('#typed', {
+var typed = new Typed("#typed", {
     typeSpeed: 50,
-    stringsElement: '#typed-strings',
-    cursorChar: '_'
-  });
+    stringsElement: "#typed-strings",
+    cursorChar: "_",
+});
