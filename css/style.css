@@ -207,3 +207,23 @@ ul {
     color: #fff;
     cursor: default;
 }
+
+
+
+
+
+@media screen and (max-width: 767px) {
+.card {
+    max-width: 200px;
+    padding: 0;
+}
+.card:not(:last-child) {
+    padding-right: 0;
+}
+.cards {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+}
+
+}
