@@ -223,6 +223,8 @@ justify-content: center;
 margin-top: 10vh;
 }
 
+/* adaptivity */
+
 @media all and (max-width: 1024px) {
     .main {
         margin: 0;
@@ -267,7 +269,7 @@ margin-top: 10vh;
     }
 }
 
-/* adaptivity */
+
 
 @media screen and (max-width: 767px) {
     .card {

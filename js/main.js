@@ -1,4 +1,3 @@
-// type 'hi' on your keyboard
 var key = [72,74,82];
 var ck = 0;
 var max = key.length;
