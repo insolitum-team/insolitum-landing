@@ -128,7 +128,7 @@ ul {
     justify-content: center;
     align-items: center;
     color: white;
-    height: calc(100vh - 75px);
+    height: 100vh;
     position: relative;
 }
 .space_text {
