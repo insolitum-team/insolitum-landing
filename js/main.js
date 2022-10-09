@@ -27,7 +27,7 @@ var hi = function() {
   window.setTimeout(function(){
     img.parentNode.removeChild(img);
   }, 5400);
-
+  
 };
 
 var record = function(e) {
@@ -53,11 +53,12 @@ var data = 'https://i.gifer.com/5EeH.gif';
 
 init(data);
 
-
+console.log('напиши "рок"')
 
 var typed = new Typed("#typed", {
     typeSpeed: 50,
     stringsElement: "#typed-strings",
     cursorChar: "_",
+    
 });
 
