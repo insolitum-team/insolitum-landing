@@ -101,10 +101,17 @@ ul {
 .logo_picture {
     border: none;
     border-radius: 50%;
-    background: rgba(255, 255, 255, 0.2);
-    height: 56px;
-    width: 56px;
+    background: rgba(0, 0, 0, 0.3);
+    height: 46px;
+    width: 46px;
     margin-right: 8px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.logo_picture_self {
+    width: 30px;
 }
 
 .logo_text__copyright {
