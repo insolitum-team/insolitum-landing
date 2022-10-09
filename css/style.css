@@ -21,7 +21,6 @@ html {
     align-items: center;
     height: 75px;
     margin: 0;
-    width: 100vw;
     top: 0;
     z-index: 100;
 }
@@ -62,7 +61,7 @@ html {
 }
 
 .header {
-    background: url(/img/desert.png);
+    background: url(/img/desert.webp);
     background-repeat: no-repeat;
     height: 100vh;
     background-position: center center;
@@ -127,7 +126,7 @@ ul {
     justify-content: center;
     align-items: center;
     color: white;
-    height: 100vh;
+    height: calc(100vh - 75px);
     position: relative;
 }
 .space_text {
@@ -225,9 +224,9 @@ ul {
     cursor: default;
 }
 .teammembers {
-display: flex;
-justify-content: center;
-margin-top: 10vh;
+    display: flex;
+    justify-content: center;
+    margin-top: 10vh;
 }
 
 /* adaptivity */
@@ -275,8 +274,6 @@ margin-top: 10vh;
         display: none;
     }
 }
-
-
 
 @media screen and (max-width: 767px) {
     .card {
