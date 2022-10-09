@@ -221,7 +221,11 @@ ul {
 display: flex;
 justify-content: center;
 margin-top: 10vh;
+align-items: center;
+flex-direction: column;
 }
+
+
 
 /* adaptivity */
 
@@ -288,3 +292,4 @@ margin-top: 10vh;
         margin-top: 0.5vh;
     }
 }
+
