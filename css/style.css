@@ -22,6 +22,8 @@ html {
     height: 75px;
     margin: 0;
     top: 0;
+    width: 100vw;
+    position: fixed;
     z-index: 100;
 }
 .hvr-grow {
