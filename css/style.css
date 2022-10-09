@@ -21,8 +21,9 @@ html {
     align-items: center;
     height: 75px;
     margin: 0;
-    width: 100vw;
     top: 0;
+    width: 100vw;
+    position: fixed;
     z-index: 100;
 }
 .hvr-grow {
@@ -62,7 +63,7 @@ html {
 }
 
 .header {
-    background: url(/img/desert.png);
+    background: url(/img/desert.webp);
     background-repeat: no-repeat;
     height: 100vh;
     background-position: center center;
@@ -100,16 +101,23 @@ ul {
 .logo_picture {
     border: none;
     border-radius: 50%;
-    background: rgba(255, 255, 255, 0.2);
-    height: 56px;
-    width: 56px;
+    background: rgba(0, 0, 0, 0.3);
+    height: 46px;
+    width: 46px;
     margin-right: 8px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.logo_picture_self {
+    width: 30px;
 }
 
 .logo_text__copyright {
     position: absolute;
-    right: -8px;
-    top: 14px;
+    right: -7px;
+    top: 10px;
     color: #fff;
     font-family: "DM Sans", sans-serif;
     font-size: 10px;
@@ -273,8 +281,6 @@ flex-direction: column;
     }
 }
 
-
-
 @media screen and (max-width: 767px) {
     .card {
         padding: 0;
@@ -292,4 +298,3 @@ flex-direction: column;
         margin-top: 0.5vh;
     }
 }
-
