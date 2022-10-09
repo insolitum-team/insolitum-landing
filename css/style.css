@@ -226,10 +226,14 @@ ul {
     cursor: default;
 }
 .teammembers {
-    display: flex;
-    justify-content: center;
-    margin-top: 10vh;
+display: flex;
+justify-content: center;
+margin-top: 10vh;
+align-items: center;
+flex-direction: column;
 }
+
+
 
 /* adaptivity */
 
