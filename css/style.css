@@ -21,7 +21,6 @@ html {
     align-items: center;
     height: 75px;
     margin: 0;
-    position: fixed;
     width: 100vw;
     top: 0;
     z-index: 100;
@@ -225,6 +224,13 @@ ul {
     color: #fff;
     cursor: default;
 }
+.teammembers {
+display: flex;
+justify-content: center;
+margin-top: 10vh;
+}
+
+/* adaptivity */
 
 @media all and (max-width: 1024px) {
     .main {
@@ -270,12 +276,12 @@ ul {
     }
 }
 
-/* adaptivity */
+
 
 @media screen and (max-width: 767px) {
     .card {
-        max-width: 200px;
         padding: 0;
+        margin-bottom: 20px;
     }
     .card:not(:last-child) {
         padding-right: 0;
@@ -284,5 +290,8 @@ ul {
         display: flex;
         align-items: center;
         flex-direction: column;
+    }
+    .teammembers {
+        margin-top: 0.5vh;
     }
 }
