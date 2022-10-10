@@ -113,12 +113,15 @@ hr {
     background: rgba(0, 0, 0, 0.3);
     margin-bottom: 10px;
     display: flex;
+    position: fixed;
     justify-content: space-around;
     align-items: center;
     height: 75px;
     margin: 0;
     top: 0;
     z-index: 100;
+    transition: all .3s ease;
+    width: 100%;
 }
 .hvr-grow {
     display: inline-block;
@@ -270,11 +273,14 @@ ul {
     justify-content: center;
     padding: 0;
     margin: 0 100px;
+    display: flex;
+        flex-direction: column;
+        align-items: center;
 }
 
 .main__container {
-    background: #fff;
-    border-radius: 47px;
+    background: #E4E4E4;
+    border-radius: 47px 47px 0 0;
     width: 70%;
     padding: 50px 80px;
 }
@@ -323,26 +329,207 @@ ul {
 .teammembers {
 display: flex;
 justify-content: center;
-margin-top: 10vh;
+margin-top: 8vh;
 align-items: center;
 flex-direction: column;
 }
 
 
+.teammembers_card {
+    display: flex;
+    flex-direction: column;
 
+}
+
+.teammembers_card_text {
+    margin-top: 1px;
+    font-style: normal;
+font-weight: 400;
+font-size: 15px;
+line-height: 20px;
+/* identical to box height */
+
+
+color: rgba(67, 67, 67, 0.67);
+}
+
+.teammembers_card_picture {
+    margin-bottom: 17px;
+}
+.teammembers_card_picture:not(:last-child){
+    margin-right: 20px;
+}
+.teammembers_card_mail {
+    font-weight: 500;
+font-size: 20px;
+line-height: 26px;
+/* identical to box height */
+
+
+color: #434343;
+}
+.footer {
+    background: #797979;
+border-radius: 0px 0px 47px 47px;
+display: flex;
+width: 70%;
+    padding: 30px 80px;
+    
+    align-items: center;
+}
+.footer_logo {
+    border-right: 2px solid #D9D9D9;
+    margin-right: 1%;
+}
+.footer_logo_text {
+    font-style: normal;
+    font-weight: 700;
+    font-size: 25px;
+    line-height: 33px;
+    /* identical to box height */
+    padding-right: 10px;
+    
+    color: #FFFFFF;
+}
+.footer_buttons_knopki{
+    font-style: normal;
+    font-weight: 700;
+    font-size: 15px;
+    line-height: 20px;
+    /* identical to box height */
+    
+    
+    color: #FFFFFF;   
+}
+.footer_buttons_knopki_aboutus{
+    font-style: normal;
+    font-weight: 700;
+    font-size: 15px;
+    line-height: 20px;
+    margin-right: 17px;
+    /* identical to box height */
+    
+    
+    color: #FFFFFF;
+}
+.footer_buttons_knopki_projects{
+    font-style: normal;
+    font-weight: 700;
+    font-size: 15px;
+    line-height: 20px;
+    margin-right: 17px;
+    /* identical to box height */
+    
+    
+    color: #FFFFFF;
+}
+.footer_buttons_knopki_members{
+    font-style: normal;
+    font-weight: 700;
+    font-size: 15px;
+    line-height: 20px;
+    margin-right: 17px;
+    /* identical to box height */
+    
+    
+    color: #FFFFFF;
+}
+.footer_buttons_knopki_contact{
+    font-style: normal;
+    font-weight: 700;
+    font-size: 15px;
+    line-height: 20px;
+    /* identical to box height */
+    
+    
+    color: #FFFFFF;
+}
+.footer_buttons_copyright{
+    font-style: normal;
+    font-weight: 700;
+    font-size: 15px;
+    line-height: 20px;
+    /* identical to box height */
+    
+    
+    color: #FFFFFF;
+}
+.footer_social{
+    margin-left: 11%;
+}
+
+.footer_social_telegram{
+    font-style: normal;
+    font-weight: 700;
+    font-size: 15px;
+    line-height: 20px;
+    /* identical to box height */
+    
+    
+    color: #FFFFFF;
+}
+
+.footer_social_twiiter {
+    font-style: normal;
+    font-weight: 700;
+    font-size: 15px;
+    line-height: 20px;
+    /* identical to box height */
+    
+    
+    color: #FFFFFF;
+}
+
+.footer_social_link {
+    font-style: normal;
+    font-weight: 700;
+    font-size: 15px;
+    line-height: 20px;
+    /* identical to box height */
+    
+    
+    color: #FFFFFF;
+}
+
+.footer_social_mail{
+    font-style: normal;
+font-weight: 700;
+font-size: 15px;
+line-height: 20px;
+/* identical to box height */
+
+
+color: #FFFFFF;
+}
+.nav.out {
+    transform: translateY(-100%);
+  }
 /* adaptivity */
 
-@media all and (max-width: 1024px) {
+@media  (min-width: 831px) and (max-width: 1024px) {
     .main {
         margin: 0;
+        
+    }
+    .cards {
+        width: 100%;
+    }
+    .teammembers_card {
+        width: 30%;
+    }
+    .teammembers_card_picture:not(:last-child) {
+        margin-right: 5px;
     }
 
     .main__container {
         padding: 25px 25px;
     }
+    .footer {
+        padding: 25px 25px;
+    }
 }
 
-@media all and (max-width: 830px) {
+@media  (min-width: 797px) and (max-width: 830px) {
     .nav_button:not(:last-child) {
         display: none;
     }
@@ -351,6 +538,18 @@ flex-direction: column;
     }
     .space-text {
         font-size: 5em;
+    }
+    .teammembers_card_picture:not(:last-child) {
+        margin-right: 5px;
+    }
+    .cards{
+        width: 100%;
+    }
+    .teammembers_card {
+        width: 30%;
+    }
+    .footer {
+        padding: 25px 25px;
     }
 }
 
@@ -362,6 +561,7 @@ flex-direction: column;
     .header {
         margin-bottom: 0;
     }
+    
 }
 
 @media all and (max-width: 550px) {
@@ -396,5 +596,44 @@ flex-direction: column;
     .blog-card {
         margin: 0 0 20px !important;
     }
+    .footer {
+        flex-direction: column;
+        width: 100%;
+    }
+    .footer_logo {
+        border-right:0;
+        margin-top: 1px;
+        border-bottom:2px solid #D9D9D9;
+        margin-bottom: 20px;
+    }
+    .footer_logo_text {
+        margin-bottom: 5px;
+    }
+    .footer_buttons_knopki {
+        display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+    align-content: stretch;
+    }
+    .footer_buttons_copyright {
+        margin-left: 20px;
+    }
+    .footer_social {
+        display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-around;
+    align-content: flex-start;
+    flex-wrap: wrap;
+    margin-left: 0;
+    }
+}
 
+@media screen and (min-width: 550px) {
+
+}
+
+.icon {
+    display: none;
 }
