@@ -80,17 +80,10 @@ for (let anchor of anchors) {
   })
 }
 
-var header = $('.nav'),
-		scrollPrev = 0;
-
-$(window).scroll(function() {
-	var scrolled = $(window).scrollTop();
- 
-	if ( scrolled > 100 && scrolled > scrollPrev ) {
-		header.addClass('out');
-	} else {
-		header.removeClass('out');
-	}
-	scrollPrev = scrolled;
+$( '.icon, ul li' ).click( function() {
+  if ( $( '.nav_buttons' ).is( ':hidden' ) ) {
+   $( '.nav_buttons' ).show('slideToggle');
+ } else {
+   $( '.nav_buttons' ).hide('slideToggle');
+ }
 });
-

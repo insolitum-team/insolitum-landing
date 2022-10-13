@@ -500,6 +500,10 @@ ul {
 .nav.out {
     transform: translateY(-100%);
 }
+.nav__button__icon {
+    display: none;
+}
+
 /* adaptivity */
 
 @media (min-width: 831px) and (max-width: 1024px) {
@@ -622,11 +626,28 @@ ul {
         flex-wrap: wrap;
         margin-left: 0;
     }
+
+    .icon {
+margin-right: 0px;
 }
+.mobile__nav {
+    display: flex;
+}
+.nav__buttons__link {
+line-height: 1.15; 
+}
+.nav__button__icon {
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+    flex-direction: row;
+    
+}
+
+  }
+
 
 @media screen and (min-width: 550px) {
 }
 
-.icon {
-    display: none;
-}
+
