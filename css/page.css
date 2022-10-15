@@ -1,0 +1,53 @@
+.main__container__top {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    border-bottom: 4px solid #808080;
+    margin-bottom: 5%;
+    padding: 80px;
+}
+.main__container__info {
+    display: flex;
+    flex-wrap: wrap;
+}
+body {
+    display: flex;
+    justify-content: center;
+}
+a{
+    font-family: 'DM Sans';
+font-style: normal;
+font-weight: 400;
+font-size: 20px;
+line-height: 26px;
+
+color: #464646;
+}
+.main__container__info__contact {
+    display: flex;
+    align-items: center;
+}
+.main__container__info__contact__img {
+    margin-right: 20px;
+}
+.main__container__info__contact__img:not(:last-child){
+    margin-bottom: 20px;
+}
+.main__container__info__career {
+    width: 40%;
+    margin-right: 70px;
+    border-bottom: 4px solid #808080;
+    margin-bottom: 40px;
+    padding-bottom: 70px;
+}
+.main__container__info__links {
+    border-bottom: 4px solid #808080;
+    margin-right: 20%;
+    padding-bottom: 40px;
+    margin-bottom: 40px;
+}
+.main__container__top__heading__name {
+    border-bottom: 4px solid #808080;
+    padding-bottom: 20px;
+    margin-bottom: 20px;
+}
