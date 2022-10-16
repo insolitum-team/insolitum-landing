@@ -1,7 +1,7 @@
 var key = [72, 74, 82]
 var ck = 0
 var max = key.length
-const contct = document.getElementsByClassName('contact')
+const contct = document.querySelector('.contact')
 console.log(contct)
 
 var hi = function () {
@@ -86,10 +86,20 @@ $('.icon, ul li').click(function () {
 })
    
 }
-
-contct.addEventListener('click', function(){
-
+// contct.addEventListener('click', contactform{})
+contct.addEventListener("click", function(){  
+let back = document.querySelector('.blur')
+let form = document.getElementsByClassName('form')
+back.style.display = 'flex'
+for (var i = 0; i < form.length; i++) form[i].style.display = 'flex'
+back.addEventListener('click', function(){
+back.style.display = 'none'
+for (var i = 0; i < form.length; i++) form[i].style.display = 'none'
 })
+})
+
+
+
 
 $(document).ready(function () {
     $('#button_contacts').click(function () {

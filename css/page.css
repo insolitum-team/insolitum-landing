@@ -22,6 +22,7 @@ font-size: 20px;
 line-height: 26px;
 
 color: #464646;
+text-decoration: none;
 }
 .main__container__info__contact {
     display: flex;
