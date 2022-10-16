@@ -10,6 +10,9 @@
     display: flex;
     flex-wrap: wrap;
 }
+.main__container {
+    border-radius: 47px 47px 47px 47px !important;
+}
 body {
     display: flex;
     justify-content: center;
@@ -21,7 +24,7 @@ font-weight: 400;
 font-size: 20px;
 line-height: 26px;
 
-color: #464646;
+color: white;
 text-decoration: none;
 }
 .main__container__info__contact {
@@ -51,4 +54,15 @@ text-decoration: none;
     border-bottom: 4px solid #808080;
     padding-bottom: 20px;
     margin-bottom: 20px;
+}
+
+@media screen  and (max-width: 768px) {
+    .main__container__top {
+        flex-direction: column;
+        padding:0;
+        padding-top: 80px;
+    }
+    .main__container {
+        padding: 0 !important;
+    }
 }
