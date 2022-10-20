@@ -267,6 +267,7 @@ ul {
   margin-left: 100px;
   cursor: pointer;
   transition: 0.3s;
+  margin-top: 7px;
 }
 
 .contact:hover {
@@ -349,6 +350,9 @@ ul {
   display: flex;
   flex-direction: column;
 }
+.teammembers_card:not(:last-child) {
+  margin-right: 20px;
+}
 
 .teammembers_card_text {
   margin-top: 1px;
@@ -364,9 +368,7 @@ ul {
 .teammembers_card_picture {
   margin-bottom: 17px;
 }
-.teammembers_card_picture:not(:last-child) {
-  margin-right: 20px;
-}
+
 .teammembers_card_mail {
   font-weight: 500;
   font-size: 20px;
@@ -536,12 +538,16 @@ ul {
   }
 }
 
-@media (min-width: 797px) and (max-width: 830px) {
+@media (min-width: 768px) and (max-width: 830px) {
   .nav_button:not(:last-child) {
     display: none;
   }
   .contact {
     margin-left: 0;
+  }
+  .main__container {
+    border-radius:  47px 47px 0 0 !important;
+    padding: 20px 59px;
   }
   .space-text {
     font-size: 5em;
@@ -553,10 +559,10 @@ ul {
     width: 100%;
   }
   .teammembers_card {
-    width: 30%;
+    
   }
   .footer {
-    padding: 50px 80px;
+    padding: 20px 59px;
   }
   .cards {
     flex-direction: column;
@@ -564,12 +570,25 @@ ul {
   .blog-card:not(:last-child) {
     margin-bottom: 20px;
   }
+  .footer_buttons_copyright {
+    display: none;
+  }
 }
 
 @media all and (max-width: 768px) {
   .main__container {
-    width: 100%;
     border-radius: 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    align-content: center;
+    justify-content: center;
+    padding:0;
+    padding: 0 59px;
+    padding-bottom: 10px;
+  }
+  .main {
+    margin:0;
   }
   .header {
     margin-bottom: 0;
@@ -598,7 +617,7 @@ ul {
   }
   .cards {
     display: flex;
-    align-items: center;
+    align-items: flex-start;
     flex-direction: column;
   }
   .teammembers {
@@ -610,7 +629,8 @@ ul {
   }
   .footer {
     flex-direction: column;
-    width: 100%;
+    padding: 0 59px;
+    border-radius: 0;
   }
   .footer_logo {
     border-right: 0;
@@ -622,7 +642,7 @@ ul {
     margin-bottom: 5px;
   }
   .footer_buttons_knopki {
-    display: flex;
+    display: none;
     flex-wrap: wrap;
     align-items: center;
     justify-content: center;
@@ -774,10 +794,7 @@ transition-delay: 0.3s;
   padding: 0;
   margin: 0;
 }
-body {
-  font-family: sans-serif;
-  font-size: 16px;
-}
+
 nav {
   background: #222;
   padding: 0 15px;
@@ -786,6 +803,10 @@ nav {
 a {
   color: white;
   text-decoration: none;
+}
+sup {
+  top: -1.5em;
+    font-size: 10px;
 }
 .menu,
 .submenu {

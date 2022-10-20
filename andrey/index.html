@@ -22,39 +22,86 @@
         <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     </head>
     <body>
-            <nav class="nav">
-                <div class="mobile__nav">
-                 <div class="nav__button__icon">
-                            <span class="icon"><img src="img/icons8-меню.svg" alt=""></span>
-                        </div>
-                <ul class="nav_buttons">
-                    
-                    <li class="nav_button hvr-grow">
-                        <a href="#ya1" class="nav__buttons__link scroll-to">Our projects</a>
-                    </li>
-                    <li class="nav_button hvr-grow">
-                        <a href="#ya2" class="nav__buttons__link scroll-to">About us</a>
-                    </li>
-                   
-                </ul>
-                </div>
-                <div class="logo">
-                    <a href="">
+                 <div class="form">
+            <section id="message">
+  <div class="container">
+    <div class="row">
+      <div class="col-md-12">
+        <h2><span>Форма</span> обратной связи</h2>
+         <div id="contact-form">        
+           <div class="controls">
+             <div class="row">
+               <div class="col-md-6">
+                 <div class="form-group">
+                   <label for="form_email">Ваш Email *</label>
+                    <input id="form_email" type="email" class="form-control" placeholder="Введите адрес электронной почты*" required="" data-error="Требуется действующее электронное письмо.">
+                   <div class="help-block with-errors"></div>
+                 </div>
+               </div>
+               <div class="col-md-6">
+                 <div class="form-group">
+                   <label for="form_name">Ваше имя *</label>
+                    <input id="form_name" type="text" class="form-control" required="" placeholder="Как к Вам обращаться?">
+                   <div class="help-block with-errors"></div>
+                 </div>
+               </div>
+             </div>
+             <div class="row">
+                 <div class="col-md-12 checkbox-data">
+                     <label>
+                         <input type="checkbox" checked="checked" id="person_data" required="">
+                         <i class="fa fa-2x icon-checkbox"></i>
+                         <span>Подтверждаю согласие на обработку <a href="#" target="_blank">персональных данных</a></span>
+                     </label>
+                 </div>
+             </div>
+             <div class="row">
+               <div class="col-md-12">
+                 <div class="form-group">
+                    <textarea id="form_message" name="text_comment" class="form-control" placeholder="Пожалуйста, оставьте сообщение" rows="4" required="" data-error="Пожалуйста, оставьте нам сообщение."></textarea>
+                   <div class="help-block with-errors"></div>
+                 </div>
+                 <div class="messages"></div>
+               </div>          
+               <div class="col-md-12 text-center">
+                  <input type="submit" name="btn_submit" id="button_contacts" value="Отправить сообщение">
+               </div>
+             </div>
+           </div>
+         </div>
+        </div>
+      </div>
+    </div>
+</section>
+</div>
+        <div class="blur"></div>
+<nav class="nav">
+  <ul class="menu">
+    <li class="logo"> <a href="index.html">
                         <div class="logo_picture">
                             <img
                                 class="logo_picture_self"
-                                src="img/LogoNew.png"
+                                src="/img/LogoNew.png"
                                 alt="no burger"
                             />
                         </div>
                     </a>
-                    <a href="" class="logo_text">Insolitum</a>
-                    <a href="" class="logo_text__copyright">©</a>
-                </div>
-                <button class="contact">
+                    <a href="index.html" class="logo_text">Insolitum<sup>&copy</sup></a>
+                    <!-- <a href="index.html" class="logo_text__copyright">©</a></li> -->
+     <li class="nav_button hvr-grow item">
+                        <a href="#ya1" class="nav__buttons__link scroll-to item">Our projects</a>
+                    </li>
+                    <li class="nav_button hvr-grow item">
+                        <a href="#ya2" class="nav__buttons__link scroll-to item">About us</a>
+                    </li>
+    
+    
+    <li class="item button"> <button class="contact">
                     <p class="contact_text">Contact us</p>
-                </button>
-            </nav>
+                </button></li>
+    <li class="toggle"><a href="#"><i class="fa fa-bars"></i></a></li>
+  </ul>
+</nav>
         <div class="main__container">
             <div class="main__container__top">
                 <img class="main__container__top__avatar" src="/img/avatar.svg" alt="">
